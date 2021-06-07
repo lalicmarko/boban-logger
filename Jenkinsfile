@@ -11,15 +11,17 @@ pipeline {
                 '''
             }
         }
-          stage('World') {
+        stage('World') {
 
-                    steps {
-                        sh 'echo "Hello World"'
-                        sh '''
-                            echo "Multiline shell steps works too"
-                            ls -lah
-                        '''
-                    }
-                }
+            steps {
+                sh 'echo World STAGE"'
+            }
+        }
+        stage('Finish') {
+
+            steps {
+                sh 'echo "FINISH STAGE"'
+            }
+        }
     }
 }
