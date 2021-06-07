@@ -86,7 +86,9 @@ publishing {
 
             def baseUrl = rootProject.ext.nexusBaseUrl
             def versionName = rootProject.ext.pomVersionName
-            def suffix = versionName.endsWith('SNAPSHOT') ? "-snapshot" : ""
+            // using mixed type repo and don't need this for now
+//            def suffix = versionName.endsWith('SNAPSHOT') ? "-snapshot" : ""
+            def suffix = ""
             url = baseUrl + suffix
             println url
             // Warehouse username and password

@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        docker { image 'node:14-alpine' }
-    }
+    agent any
     stages {
         stage('Build') {
 
@@ -16,7 +14,7 @@ pipeline {
         stage('World') {
 
             steps {
-                sh 'node --version'
+                sh 'echo "World STAGE"'
             }
         }
         stage('Finish') {

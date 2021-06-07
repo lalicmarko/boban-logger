@@ -21,7 +21,7 @@ allprojects {
         mavenCentral()
         maven {
             allowInsecureProtocol(true)
-            url(uri("http://localhost:8081/repository/android-libs/"))
+            url(uri("http://localhost:82/repository/android-libs/"))
             credentials {
                 username "admin"
                 password "1234"
