@@ -16,7 +16,7 @@ pipeline {
         stage('World') {
 
             steps {
-                sh 'echo "World STAGE"'
+                sh 'node --version'
             }
         }
         stage('Finish') {
@@ -28,7 +28,7 @@ pipeline {
     }
     post {
         always {
-            sh 'node --version'
+            echo 'This will always run'
         }
         success {
             echo 'This will run only if successful'
