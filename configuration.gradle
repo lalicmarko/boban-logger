@@ -1,0 +1,9 @@
+ext {
+    pomVersionName = '2.1.0'
+    pomVersionCode = 21
+    pomGroupID = "android-group"
+    pomArtifactId = "boban-logger"
+    nexusUsername = "admin"
+    nexusPassword = "1234"
+    nexusBaseUrl = "http://localhost:8081/repository/android-libs"
+}
