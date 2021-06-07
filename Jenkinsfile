@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        docker { image 'node:14-alpine' }
+    }
     stages {
         stage('Build') {
 
@@ -26,7 +28,7 @@ pipeline {
     }
     post {
         always {
-            echo 'This will always run'
+            sh 'node --version'
         }
         success {
             echo 'This will run only if successful'
