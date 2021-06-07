@@ -14,7 +14,7 @@ pipeline {
         stage('World') {
 
             steps {
-                sh 'echo World STAGE"'
+                sh 'echo "World STAGE"'
             }
         }
         stage('Finish') {
