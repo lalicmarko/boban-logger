@@ -28,8 +28,12 @@ pipeline {
                 sh './gradlew check'
             }
         }
+        stage('Upload') {
+            steps {
+                sh './gradlew upload'
+            }
+        }
         stage('Finish') {
-
             steps {
                 sh 'echo "FINISH STAGE"'
             }
@@ -41,7 +45,7 @@ pipeline {
             junit allowEmptyResults: true, testResults: '**/test-results/*.xml'
         }
         success {
-            echo 'This will run only if successful'
+            echo 'Success'
         }
         failure {
             echo 'This will run only if failed'
