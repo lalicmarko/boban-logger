@@ -38,7 +38,7 @@ pipeline {
     post {
         always {
             archiveArtifacts artifacts: '**/*.jar', fingerprint: true
-            junit 'build/reports/**/*.xml'
+            junit allowEmptyResults: true, testResults: '**/test-results/*.xml'
         }
         success {
             echo 'This will run only if successful'
