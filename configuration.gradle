@@ -1,6 +1,6 @@
 ext {
-    pomVersionName = '1.0.2'
-    pomVersionCode = 2
+    pomVersionName = '1.0.4'
+    pomVersionCode = 4
     pomGroupID = "intdev-utilities"
     pomArtifactId = "boban-logger"
     nexusUsername = "admin"
