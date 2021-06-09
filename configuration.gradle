@@ -1,9 +1,9 @@
 ext {
-    pomVersionName = '1.0.3'
-    pomVersionCode = 5
-    pomGroupID = "intdev"
+    pomVersionName = '1.0.2'
+    pomVersionCode = 2
+    pomGroupID = "intdev-utilities"
     pomArtifactId = "boban-logger"
     nexusUsername = "admin"
     nexusPassword = "1234"
-    nexusBaseUrl = "http://localhost:82/repository/android-utils"
+    nexusBaseUrl = "http://localhost:2/repository/intdev-utilities/"
 }
