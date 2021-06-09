@@ -29,8 +29,9 @@ pipeline {
             }
         }
         stage('Upload') {
-            steps {
+            retry(10) {
                 sh './gradlew publish'
+
             }
         }
         stage('Finish') {
