@@ -1,5 +1,11 @@
 pipeline {
     agent any
+
+    environment {
+        LC_CTYPE = 'en_US.UTF-8'
+        ANDROID_HOME = "/home/jenkins/Android/Sdk"
+    }
+
     stages {
         stage('Build') {
 
