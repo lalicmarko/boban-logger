@@ -30,7 +30,7 @@ pipeline {
         }
         stage('Upload') {
             steps {
-                sh './gradlew upload'
+                sh './gradlew publish'
             }
         }
         stage('Finish') {
