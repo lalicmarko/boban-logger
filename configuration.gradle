@@ -1,9 +1,0 @@
-ext {
-    pomVersionName = "1.0.1"
-    pomVersionCode = 1
-    pomGroupID = "intdev-utilities"
-    pomArtifactId = "log-uc"
-    nexusUsername = "admin"
-    nexusPassword = "1234"
-    nexusBaseUrl = "http://localhost:8081/repository/intdev-common/"
-}
