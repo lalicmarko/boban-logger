@@ -1,9 +1,9 @@
 ext {
-    pomVersionName = '1.0.4'
-    pomVersionCode = 4
+    pomVersionName = "1.0.1"
+    pomVersionCode = 1
     pomGroupID = "intdev-utilities"
-    pomArtifactId = "boban-logger"
+    pomArtifactId = "log-uc"
     nexusUsername = "admin"
     nexusPassword = "1234"
-    nexusBaseUrl = "http://localhost:2/repository/intdev-utilities/"
+    nexusBaseUrl = "http://localhost:8081/repository/intdev-common/"
 }

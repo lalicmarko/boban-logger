@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Setup" />
+
+    <style name="Setup.Guidance" />
+
+    <style name="Setup.Guidance.Title">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">67dp</item>
+        <item name="android:textSize">@dimen/setup_title_text_size</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+
+    <style name="Setup.Guidance.Description">
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginTop">65dp</item>
+    </style>
+
+    <style name="Setup.GuidedActions" />
+
+    <style name="Setup.GuidedActions.List">
+        <item name="android:padding">@dimen/setup_list_padding</item>
+        <item name="android:layout_marginTop">65dp</item>
+    </style>
+
+    <style name="Setup.GuidedActions.GuidedActionItemDescriptionStyle">
+        <item name="android:textSize">@dimen/lb_guidedactions_item_description_font_size</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="Setup.GuidedActions.ItemContainer">
+        <item name="android:background">@drawable/setup_list_item_background</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">@dimen/setup_list_item_padding</item>
+        <item name="android:layout_marginEnd">40dp</item>
+    </style>
+
+    <style name="Setup.GuidedActions.ItemTitle">
+        <item name="android:textSize">@dimen/setup_list_item_text_size</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="AppTheme.GuidedStep" parent="Theme.Leanback.GuidedStep">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="guidedActionsElevation">0dp</item>
+        <item name="guidedActionsBackground">@null</item>
+        <item name="guidedStepBackground">@color/background_color</item>
+        <item name="guidanceTitleStyle">@style/Setup.Guidance.Title</item>
+        <item name="guidanceDescriptionStyle">@style/Setup.Guidance.Description</item>
+        <item name="guidedActionsListStyle">@style/Setup.GuidedActions.List</item>
+        <item name="guidedActionItemContainerStyle">@style/Setup.GuidedActions.ItemContainer</item>
+        <item name="guidedActionItemTitleStyle">@style/Setup.GuidedActions.ItemTitle</item>
+    </style>
+</resources>

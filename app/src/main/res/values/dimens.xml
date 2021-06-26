@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="setup_item_selected_radius">2dp</dimen>
+    <dimen name="setup_title_text_size">36sp</dimen>
+    <dimen name="setup_description_text_size">18sp</dimen>
+    <dimen name="setup_list_padding">16dp</dimen>
+    <dimen name="setup_list_item_padding">16dp</dimen>
+    <dimen name="setup_list_item_text_size">14sp</dimen>
+</resources>
